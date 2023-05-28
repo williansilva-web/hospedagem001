@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* ================== / FONTES LOCAIS - BAIXADAS / ==================== */
+
+  /* assim como nos outros tipos de inserção, este também pode ser acionado outro link alternativo para outra fonte local, daí caso uma não carregue o primeiro formato, o formato seguinte servirá com alternativa */
+
+@font-face { 
+    font-family: 'Roboto-mono_Local';
+    src: url('../fontes/roboto_mono/RobotoMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+        /*
+    ASSOCIAÇÃO FAMÍLIA
+    font-family: 'Roboto-mono_Local','Courier New', Courier, monospace; */
+
+
+    /* Tipos de format()
+        - opentype (otf) "mais compativel com os navegadores"
+        - truetype (ttf) "mais compativel com os navegadores"
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typographt)
+        - svg 
+    */
+ }
+
+.roboto-local {
+    font-family: 'Roboto-mono_Local','Courier New', Courier, monospace;;
+}

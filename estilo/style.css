@@ -126,6 +126,26 @@
  }
 
  @font-face { 
+    font-family: 'Roboto-mono_Local';
+    src: url('../fontes/roboto_mono/RobotoMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+        /*
+    ASSOCIAÇÃO FAMÍLIA
+    font-family: 'Roboto-mono_Local','Courier New', Courier, monospace; */
+
+
+    /* Tipos de format()
+        - opentype (otf) "mais compativel com os navegadores"
+        - truetype (ttf) "mais compativel com os navegadores"
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typographt)
+        - svg 
+    */
+ }
+
+ @font-face { 
     font-family: 'Sf Pro regular';
     src: url('../fontes/sf_pro/sf-pro-display-regular.otf') format('opentype');
     font-weight: normal;
@@ -176,6 +196,10 @@ Códigos:
 * {
     margin: 0px;
     padding: 0px;
+}
+
+.roboto-local {
+    font-family: ;
 }
 
 body {

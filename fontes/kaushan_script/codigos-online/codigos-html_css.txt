@@ -1,0 +1,35 @@
+NO HTML (Somente regular - bem limitada)
+
+[ <link> ]
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+---------------------------------------------------------------------------------
+
+CSS rules to specify families:
+
+Recomendação google = font-family: 'Kaushan Script', cursive;
+
+"Mais recomendado" = font-family: 'Kaushan Script', serif, cursive;
+
+
+==================================================================================
+
+
+NO CSS (Somente regular - bem limitada)
+
+[ @import ]
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+</style>
+
+----------------------------------------------------------------------------------
+
+CSS rules to specify families:
+
+Recomendação google = font-family: 'Kaushan Script', cursive;
+
+"Mais recomendado" = font-family: 'Kaushan Script', serif, cursive;

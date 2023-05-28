@@ -1,0 +1,542 @@
+@charset "UTF-8";
+
+/* =================== / FONTES ONLINE - SITES / ===================== */
+
+ /* FONTE ONLINE: 'Work Sans' (mais completa) */
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  /* ASSOCIAÇÃO FAMÍLIA:
+  font-family: 'Work Sans', Arial, Helvetica, sans-serif; */  
+
+  /* FONTE ONLINE: 'Roboto Mono (mais completa)" */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+  /* ASSOCIAÇÃO FAMÍLIA:
+  font-family: 'Roboto Mono', 'Courier New', Courier, monospace; */
+
+  /* FONTE ONLINE: 'Bebas Neue' (somente Regular) */
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  /* ASSOCIAÇÃO FAMÍLIA:
+  font-family: 'Bebas Neue', serif, cursive; */
+
+  /* FONTE ONLINE: 'Kaushan Script' (somente Regular) */
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+  /* ASSOCIAÇÃO FAMÍLIA:
+  font-family: 'Kaushan Script', serif, cursive; */
+
+  /* FONTE ONLINE: 'Fredericka the Great' (somente Regular) */
+  @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+  /* ASSOCIAÇÃO FAMÍLIA:
+  font-family: 'Fredericka the Great', serif, cursive; */
+
+/* ================== / FONTES LOCAIS - BAIXADAS / ==================== */
+
+  /* assim como nos outros tipos de inserção, este também pode ser acionado outro link alternativo para outra fonte local, daí caso uma não carregue o primeiro formato, o formato seguinte servirá com alternativa */
+
+ @font-face { /* exemplo adicionar um formato alternativo (otf ou ttf)*/
+    font-family: 'garlicha-escrita';
+    src: url('../fontes/garlicha/Garlicha.otf') format('opentype'), url('fontes/garlicha/Garlicha.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+    /* ASSOCIAÇÃO FAMÍLIA:
+  font-family: 'garlicha-escrita', 'Times New Roman', Times, serif; */
+
+    /* Tipos de format()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typographt)
+        - svg 
+    */
+    
+ }
+
+ @font-face { 
+    font-family: 'Love';
+    src: url('../fontes/love_larry/love-larry.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+    /* ASSOCIAÇÃO FAMÍLIA:
+  font-family: 'Love', 'Times New Roman', Times, serif; */
+
+    /* Tipos de format()
+        - opentype (otf) "mais compativel com os navegadores"
+        - truetype (ttf) "mais compativel com os navegadores"
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typographt)
+        - svg 
+    */
+ }
+
+ @font-face { 
+    font-family: 'Blacsword';
+    src: url('../fontes/diversas/Blacksword.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    /*
+    ASSOCIAÇÃO FAMÍLIA
+    font-family: 'Blacsword','Courier New', Courier, monospace; */
+
+    /* Tipos de format()
+        - opentype (otf) "mais compativel com os navegadores"
+        - truetype (ttf) "mais compativel com os navegadores"
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typographt)
+        - svg 
+    */
+ }
+
+ @font-face { 
+    font-family: 'unispace regular';
+    src: url('../fontes/unispace/unispace_rg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+    /*
+    ASSOCIAÇÃO FAMÍLIA
+    font-family: 'unispace regular','Courier New', Courier, monospace; */
+
+    /* Tipos de format()
+        - opentype (otf) "mais compativel com os navegadores"
+        - truetype (ttf) "mais compativel com os navegadores"
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typographt)
+        - svg 
+        */
+ }
+
+ @font-face { 
+    font-family: 'Code New Roman';
+    src: url('../fontes/code_new_roman/Code_New_Roman.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+        /*
+    ASSOCIAÇÃO FAMÍLIA
+    font-family: 'Code New Roman','Courier New', Courier, monospace; */
+
+
+    /* Tipos de format()
+        - opentype (otf) "mais compativel com os navegadores"
+        - truetype (ttf) "mais compativel com os navegadores"
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typographt)
+        - svg 
+    */
+ }
+
+ @font-face { 
+    font-family: 'Sf Pro regular';
+    src: url('../fontes/sf_pro/sf-pro-display-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+    /*
+    ASSOCIAÇÃO FAMÍLIA
+    font-family: 'Sf Pro regular', Arial, Helvetica, sans-serif */
+
+    /* Tipos de format()
+        - opentype (otf) "mais compativel com os navegadores"
+        - truetype (ttf) "mais compativel com os navegadores"
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typographt)
+        - svg 
+    */
+ }
+
+/* ESCALA DE CORES GUNABARA
+AULA: Variáveis em CSS - @Curso em Vídeo HTML5 e CSS3
+LINK: https://www.youtube.com/watch?v=3S5ts5bzvzM
+
+Códigos:
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+*/
+
+/*CRIAÇÃO DA VARIÁVEIS*/
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao_nativa: Arial, Helvetica, sans-serif;
+    --fonte-destaque_online: 'Bebas Neue', serif, cursive;
+    --fonte-apple_local: 'Sf Pro regular', Arial, Helvetica, sans-serif;
+    --fonte-assinatura_local-otfttf: 'garlicha-escrita', 'Times New Roman', Times, serif;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao_nativa);
+}
+
+a.externo::after {
+    content: '\00A0\1F517'; /* aparecer icone de "corente" em todos os links EXTERNOS, desde que estejam com uma classe (class="externo") */
+}
+
+header {
+    /* background-color: var(--cor4); */ /* prenchimento sólido*/
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque_online);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+header > p {
+    font-family: var(--fonte-padrao_nativa);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315); /* sombreamento da fonte*/
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: px px px rgba(0, 0, 0, 0.192); /* sombreamento da fonte*/
+}
+
+nav > a {
+    color: var(--cor1);
+    padding: 10px; /* distanciar as palavra / botões */
+    border-radius: 4px;
+    text-decoration: none; /* remove o sublinhado no links */
+    font-weight: bold; /* negrito */
+    transition-duration: 0.4s;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* border-radius: 10px; */ /*aplica no quatro cantos da página*/
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-apple_local);
+}
+
+main h2 {
+    font-family: var(--fonte-apple_local);
+    color: var(--cor4);
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+
+
+}
+
+
+main img {
+    width: 100%;
+}
+
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    /* text-indent: 30px; */ /* recuo no início de cada parágrafo */
+    font-size: 1.2em; /* aumenta a proporção e escala da fonte (tamanho) "o padrão é 1em"*/
+    line-height: 1.6em; /* espaço entre linha (altura das linhas) */
+}
+
+main strong {
+    color: var(--cor3);
+    font-weight: bold;
+}
+
+main em {
+    color: blue;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main img.pequena-esquerda {
+    max-width: 350px;
+    display: block;
+    margin: left;
+}
+
+main img.direita {
+    max-width: 150px;
+    display: block;
+    float: right;
+}
+
+main img.esquerda {
+    max-width: 150px;
+    display: block;
+    float: left;
+}
+
+div.vid-geral {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+div.vid-geral > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+div.vid-geral > video {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+div.aud-fixo {
+    position: sticky;
+    top: -1px;
+    background-color: white;
+    border: none;
+}
+
+main ul {
+    list-style-position: inside;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main ol {
+    list-style-position: inside;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+div.destaque {
+    background-color: var(--cor0);
+    border: 1px solid var(--cor3);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+div.destaque:hover {
+    background-color: var(--cor1);
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside > ul {
+    list-style-position: inside; /* padrão é "outside" (bolinhas fora da área do texto)*/
+
+    /*columns: 2;*/ /* padrão é 1. opção para distribuir a lista em duas coluna "quantidade rasoável" */
+
+    /*PERSONALIZAR O SIMBOLO DA LISTA COM CODIGO DA INTERNET "Emojipedia"*/
+    /*Exemplo do código completo da internet= "U+2714"
+    Deve ser pego apenas os números depois do sinal de "+"
+    Adicionar o código entre aspas simples '' sendo que primeiro deve ser adicionada uma barra invertida \ (serve com complemento excencial de composição do código
+    Caso necessário, para distanciar o caracte ou emoji deve adicionar códigos que representa "espaço em branco no CSS" (00A0)
+
+    RESUMO DO EXEMPLO
+    Barra invertida \ = serve como complemento excencial de união dos códigos
+    2714 = código do emoji ou simbola que será usado nos elementos da lista
+    00A0 = representação de "espaço em branco em CSS
+
+    No parâmetro abaixo são adicionados dois "espaços em branco" para dar mais distancia entre o emoji (simbolo) e o conteúdo da lista.
+    
+    ATENÇÃO! Não é compativel com todo típo de navegadores
+
+    */
+    list-style-type: '\2714\00A0\00A0'; /* padrão é "square"*/
+
+}
+
+aside > ol {
+    list-style-position: inside;
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 8px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+/* ESTILO BÁSICO E EXCENCIAL PODE SER ADOTADO TANTO PARA TABELAS SIMPLES COMO TABELAS COMPLETAS */
+table {
+    width: 800px;
+    border-collapse: collapse; /*O padrão é "separate*/
+    /*border: 5px solid red; /*"DESNECESSÁRIO" Aplica um contorno área externa da tabela*/
+}
+
+
+
+
+
+/* ESTILOS DA TABELAS GRANDES (COMPLETAS)*/
+
+/*EDITAR AS LINHAS DA TABELA*/
+
+/*tr {
+    background-color: aqua; /*"DESNECESSÁRIO" Colore todas as linha da tabela
+}*/
+
+/*NORMALMENTE USADO PARA OS CABEÇALHOS*/
+
+/*th {
+    border: ;
+}*/
+
+
+/*OS DADOS (CÉLULAS)*/
+td, th {
+    border: 1px solid black;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: aqua;
+}
+
+thead, tfoot {
+    background-color: aquamarine;
+    color: black;
+}
+
+
+
+/* ===============================================================
+
+ESTILOS DA TABELAS SIMPLES (APENAS COM DADOS - SEM CABEÇALHO E SEM RODAPÉ)*/
+/*OS DADOS (CÉLULAS)*/
+/*
+td, {
+    border: 1px solid black;
+}
+================================================================ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

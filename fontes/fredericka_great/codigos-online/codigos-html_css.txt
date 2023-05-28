@@ -1,0 +1,35 @@
+NO HTML (Somente regular - bem limitada)
+
+[ <link> ]
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+
+---------------------------------------------------------------------------------
+
+CSS rules to specify families:
+
+Recomendação google = font-family: 'Fredericka the Great', cursive;
+
+"Mais recomendado" = font-family: 'Fredericka the Great', serif, cursive;
+
+
+==================================================================================
+
+
+NO CSS (Somente regular - bem limitada)
+
+[ @import ]
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+</style>
+
+----------------------------------------------------------------------------------
+
+CSS rules to specify families:
+
+Recomendação google = font-family: 'Fredericka the Great', cursive;
+
+"Mais recomendado" = font-family: 'Fredericka the Great', serif, cursive;

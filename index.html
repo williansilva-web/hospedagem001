@@ -9,10 +9,23 @@
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
+
     <header>
         <h1>Estudo HTML e CSS</h1>
         <p>Curso Gustavo Guanabara</p>
     </header>
+
+    <nav>
+        <!-- = = NAV START... -->
+        
+        <a href="#">HOME</a>
+        <a href="#" target="_blank">VIDEOS</a>
+        <a href="#" target="_blank">COURSES</a>
+        <a href="#" target="_blank">PODCAST</a>
+        
+        <!-- = = NAV END - // -->
+    </nav>
+
     <main>
         <article>
             <div class="aud-fixo">
@@ -51,6 +64,11 @@
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quia unde, ducimus ab assumenda tenetur ullam sunt et sint, facere provident numquam minus! Veniam dignissimos blanditiis vitae dicta nobis illum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo quis tempore blanditiis magni ducimus laudantium culpa iste asperiores nobis minima dolorum ex quo exercitationem, placeat similique repudiandae harum, maxime ab!</p>
 
+            <div class="aud-fixo">
+                <h1>Inserindo audio - forma simples Tag [audio]</h1>
+                <audio src="audios/guanacast-33_original.mp3" preload="metadata" controls></audio>
+            </div>
+
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quia unde, ducimus ab assumenda tenetur ullam sunt et sint, facere provident numquam minus! Veniam dignissimos blanditiis vitae dicta nobis illum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo quis tempore blanditiis magni ducimus laudantium culpa iste asperiores nobis minima dolorum ex quo exercitationem, placeat similique repudiandae harum, maxime ab!</p>
         </article>
         <hr>
@@ -70,6 +88,16 @@
                 <source media="(max-width: 1250px)" srcset="imagens/img-teste/image101-1000.jpg">
                 <source media="(max-width: 1650px)" srcset="imagens/img-teste/image101-1200.jpg">
                 <img src="imagens/img-teste/image101-1600.jpg" alt="Tamanho original 1600px">
+            </picture>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus voluptate accusamus dolore reiciendis. Dignissimos totam deserunt adipisci rerum aliquam magnam voluptates hic! Minus vel, placeat cupiditate officiis inventore dicta saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti autem officia natus facilis in repellendus esse eos earum tenetur nesciunt, quos accusamus? Omnis voluptas non necessitatibus neque ratione nostrum nesciunt.</p>
+
+            <picture>
+                <source media="(max-width: 750px)" srcset="imagens/img-teste/foto-p-300.png">
+                <source media="(max-width: 1050px)" srcset="imagens/img-teste/foto-m-700.png">
+                
+                <img src="imagens/img-teste/foto-g-1000.png" alt="Tamanho original 1600px">
+            
             </picture>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis mollitia libero quae. Et ex suscipit dolores unde perferendis quidem rem? Quae velit doloribus necessitatibus? Incidunt repudiandae facere quibusdam necessitatibus reiciendis.</p>
@@ -113,12 +141,37 @@
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis harum possimus voluptatibus nam? Vel explicabo veniam alias beatae reiciendis provident nesciunt id, deleniti excepturi omnis dignissimos, impedit, debitis cumque iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vel minima a fugiat doloremque autem quod qui, eos error nihil quasi architecto eligendi minus repellendus fuga dolor veritatis voluptatibus dolore!</p>
 
-            <h2>Incorporação de vídeo "Local"</h2>
+            <h2>Inserindo vídeos hospedados localmente</h2>
+
+            <p><strong>Estes vídeos abaixo estão hospedados localmente no meu próprio servidor</strong></p>
+            
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus optio maiores asperiores suscipit illo dolor quaerat reprehenderit sequi, ipsa itaque! Atque placeat natus quibusdam beatae, provident voluptas asperiores aliquid.</p>
 
+            <h3>Forma simples com a Tag [video]</h3>
+
             <div class="vid-geral">
-                <video width="560" src="midia/video_hospedagem-propria.mp4" controls></video>
+                <video src="midia/video_hospedagem-propria.mp4" width="560" controls></video>
             </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis harum possimus voluptatibus nam? Vel explicabo veniam alias beatae reiciendis provident nesciunt id, deleniti excepturi omnis dignissimos, impedit, debitis cumque iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vel minima a fugiat doloremque autem quod qui, eos error nihil quasi architecto eligendi minus repellendus fuga dolor veritatis voluptatibus dolore!</p>
+
+            <h3>Forma Completa Tags [video] e [source]</h3>
+
+            <div class="vid-geral">
+                <video width="560" poster="imagens/limoes-capa.png" controls>
+                    <source src="midia/meu-video.mp4" type="video/mp4">
+                    <source src="midia/meu-video.m4v" type="video/mp4">
+                    <source src="midia/meu-video.webm" type="video/webm">
+                    <source src="midia/meu-video.ogv" type="video/ogg">
+                    <p>Este nagevegador é incompatível com Reprodução de video. <a href="midia/meu-video.mp4">Clique para baixar</a></p>
+                </video>
+            </div>
+
+            <p>Download: <a href="midia/meu-video.mp4" download="meu-video.mp4" type="audio/mpeg">video mp4</a></p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis harum possimus voluptatibus nam? Vel explicabo veniam alias beatae reiciendis provident nesciunt id, deleniti excepturi omnis dignissimos, impedit, debitis cumque iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vel minima a fugiat doloremque autem quod qui, eos error nihil quasi architecto eligendi minus repellendus fuga dolor veritatis voluptatibus dolore!</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis harum possimus voluptatibus nam? Vel explicabo veniam alias beatae reiciendis provident nesciunt id, deleniti excepturi omnis dignissimos, impedit, debitis cumque iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vel minima a fugiat doloremque autem quod qui, eos error nihil quasi architecto eligendi minus repellendus fuga dolor veritatis voluptatibus dolore!</p>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis harum possimus voluptatibus nam? Vel explicabo veniam alias beatae reiciendis provident nesciunt id, deleniti excepturi omnis dignissimos, impedit, debitis cumque iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vel minima a fugiat doloremque autem quod qui, eos error nihil quasi architecto eligendi minus repellendus fuga dolor veritatis voluptatibus dolore!</p>
         </article>

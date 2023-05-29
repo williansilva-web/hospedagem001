@@ -199,7 +199,7 @@ Códigos:
 }
 
 .roboto-local {
-    font-family: ;
+    font-family: 'Roboto-mono_Local','Courier New', Courier, monospace;
 }
 
 body {
@@ -466,6 +466,10 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     color: var(--cor1);
+}
+
+code {
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
 }
 
 
